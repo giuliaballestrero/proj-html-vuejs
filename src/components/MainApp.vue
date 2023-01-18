@@ -36,6 +36,8 @@ components:  {
     </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/general.scss' as *;
+@use '../styles/partials/_variables.scss' as *;
 
 </style>
