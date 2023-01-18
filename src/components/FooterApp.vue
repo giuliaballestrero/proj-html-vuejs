@@ -12,7 +12,7 @@ components:  {
 
 <template>
     <section class="container-fluid">
-        <!--Social + nav ul  + search bar w/categories--> !
+        <!--Social + nav ul  + search bar w/categories-->
     </section>
 </template>
 

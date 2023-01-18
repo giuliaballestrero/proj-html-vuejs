@@ -1,5 +1,4 @@
 <script >
-import { useAttrs } from 'vue';
 
 export default {
 
@@ -21,13 +20,13 @@ data() {
 </script>
 
 <template>
-    <section class="header-top container-fluid d-flex justify-content-between align-items-center fw-bold"> 
+    <section class="header-top container-fluid d-flex justify-content-between align-items-center"> 
         <!-- logo e navbar btns-->
         <div class="logo-container">
             <a href="#"><img src="../assets/img/theme_eduprime_logo.png" alt="logo EduPrime"></a>
         </div>
 
-        <nav class="navbar">
+        <nav class="navbar fw-bold">
             <ul class="d-flex">
                 <li v-for="item in navItems">
                     <a class="dropdown-toggle px-3" href="#">
@@ -45,24 +44,38 @@ data() {
         </nav>
     </section>
 
-    <section class="header-bottom">
-        <!--Jumbo Key to your success + btns-->
+    <section class="header-bottom text-center">
+       <div class="text-wrapper">
+            <h1 class="">
+                Key to your success
+            </h1>
+            <p class="py-5">
+                EduPrime is the most versatile WordPress theme for educational purposes,
+                showcasing universities, courses, secondary schools, etc.
+            </p>
+
+            <button type="button" class="btn b-left">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                <span>Search courses</span> 
+            </button>
+            <button type="button" class="btn b-right">
+                <font-awesome-icon icon="fa-solid fa-user-plus" />
+               <span>Apply for university</span> 
+            </button>
+       </div>       
     </section>
+    <img src="../assets/svg/svg-1.svg" alt="wave">
 </template>
 
 <style scoped lang="scss">
 @use '../styles/general.scss' as *;
 @use '../styles/partials/_variables.scss' as *;
 
-* {
-    background-color: $vivid-bg-color-2;
-}
-
 
 .logo-container {
 
     img {
-        width: 300px;
+        width: 350px;
         padding: 3rem 2rem;
     }
 }
@@ -77,6 +90,7 @@ nav {
     padding-right: 2rem;
         ul {
             padding-right: 2rem;
+            font-size: 1.2rem;
         }
         
         a {
@@ -89,10 +103,12 @@ nav {
 }
 
 .header-top {
+    background-color: $vivid-bg-color-3;
+
     button {
         background-color: $vivid-bg-color-1;
         text-transform: uppercase;
-        border-radius: 30px;
+        border-radius: 50px;
         padding: 1.3rem 2.5rem;
         font-weight: bolder;
     }
@@ -101,6 +117,52 @@ nav {
         background-color: $main-bg-color;
         color:$vivid-text-color-3;
     }
+}
+
+.header-bottom {
+    background-color: $vivid-bg-color-3;
+    // background-image: url(../assets/img/theme_slider2_bg-1.jpg);
+    color: $main-light-text-color;
+    padding-bottom: 5rem;
+
+    .text-wrapper {
+        width:45%;
+        margin: auto;
+
+        h1 {
+            font-size: 4rem;
+            padding-top: 4rem;
+            font-weight: bolder;
+            }
+        p {
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+        }
+
+        span {
+            padding-left: 1rem;
+        }
+
+        .b-left,
+        .b-right {
+            border-radius: 50px;
+            padding: 1.3rem 2.5rem;
+            font-weight: bolder;
+        }
+
+        .b-left {
+            background-color: $vivid-bg-color-1; 
+            margin-right: 3rem;
+        }
+
+        .b-right {
+            background-color: $main-bg-color; 
+            color: $vivid-text-color-3;
+        }
+   
+    }
+
+    
 }
 
 
