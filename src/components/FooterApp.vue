@@ -1,10 +1,19 @@
 <script >
+export default {
 
+name: 'FooterApp',
+
+components:  {
+
+},
+}
 
 </script>
 
 <template>
-    <h1>footer</h1>
+    <section class="container-fluid">
+        <!--Social + nav ul  + search bar w/categories--> !
+    </section>
 </template>
 
 <style scoped>

@@ -1,10 +1,23 @@
 <script >
+export default {
 
+name: 'HeaderApp',
+
+components:  {
+
+},
+}
 
 </script>
-npm i bootstra
+
 <template>
-    <h1 class="text-warning">header</h1>
+    <section class="container-fluid"> 
+        <!-- logo e navbar btns--> Hello
+    </section>
+
+    <section>
+        <!--Jumbo Key to your success + btns-->
+    </section>
 </template>
 
 <style scoped>
