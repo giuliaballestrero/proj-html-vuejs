@@ -92,7 +92,7 @@ export default {
             </div>
         </div>
 
-        <img src="../assets/svg/svg-0.svg" alt="">
+        <!--<img src="../assets/svg/svg-0.svg" alt="">-->
 
     </section>
 
@@ -181,7 +181,7 @@ export default {
 
     <section> <!--last courses-->
         <!--Latest Courses cards + 2 layout = inverted (Ex method + Variable Fee)-->
-        <img src="../assets/svg/svg-1.svg" alt="">
+        <!--<img src="../assets/svg/svg-1.svg" alt="">-->
         <div class="latest-courses">
             <div class="text-container">
                 <h2 class="pb-4">Latest Courses</h2>
@@ -687,9 +687,10 @@ padding-bottom: 6rem;
     background-color: $vivid-bg-color-3;
     color: $main-light-text-color;
     padding: 4rem;
-    position: relative;
 
     .subs-wrapper {
+
+
         h1{
             padding-right: 4rem;
         }
@@ -697,6 +698,7 @@ padding-bottom: 6rem;
             border-radius: 30px;
             border: none;
             padding: 1rem 0;
+            position: relative;
             
             
         }
@@ -707,9 +709,6 @@ padding-bottom: 6rem;
             padding: 1rem 1.2rem;
             position: absolute;
             right: 430px;
-            top: 63px;
-
-
         }
     }
 }

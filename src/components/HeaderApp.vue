@@ -63,7 +63,7 @@ data() {
                <span>Apply for university</span> 
             </button>
        </div> 
-       <img src="../assets/img/Wave-1.png" alt="wave" class="wave">      
+       <!--<img src="../assets/img/Wave-1.png" alt="wave" class="w-20">      -->
     </section>
     
 </template>
@@ -172,11 +172,6 @@ nav {
         }
    
     }   
-}
-
-.wave {
-    object-position: top;
-    width: 100%;
 }
 
 
