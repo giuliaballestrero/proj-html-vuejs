@@ -176,7 +176,7 @@ export default {
         <button type="button" class="btn">View All Events</button>
     </section>
 
-    <section>
+    <section> <!--last courses-->
         <!--Latest Courses cards + 2 layout = inverted (Ex method + Variable Fee)-->
         <div class="latest-courses">
             <div class="text-container">
@@ -313,8 +313,20 @@ export default {
         </div>
     </section>
 
-    <section>
-        <!--Partners logos list-->
+    <section class="partners text-center pt-5">
+        <h2>Partners</h2>
+        <p class="w-25 m-auto py-5">Laverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy.</p>
+
+        <div class="partners-logos">
+            <img src="../assets/img/partner-2.png" alt="medals logo">
+            <img src="../assets/img/partner-3.png" alt="lamp logo">
+            <img src="../assets/img/partner-4.png" alt="books logo">
+            <img src="../assets/img/partner-5.png" alt="school building logo">
+            <img src="../assets/img/partner-6.png" alt="handmade logo">
+            <img src="../assets/img/partner-8.png" alt="cup logo">
+            <img src="../assets/img/partner-1.png" alt="paper logo">
+            <img src="../assets/img/partner-7.png" alt="communication logo">
+        </div>
     </section>
 </template>
 
@@ -691,5 +703,23 @@ padding-bottom: 6rem;
         }
     }
 }
+
+.partners {
+    padding-bottom: 10rem;
+    background-image: url();
+}
+
+.partners-logos img {
+   width: 100px;
+   margin: 0 1rem;
+   opacity: 20%;
+
+   &:hover {
+    opacity: 100%;
+   }
+
+}
+
+
 </style>
 
