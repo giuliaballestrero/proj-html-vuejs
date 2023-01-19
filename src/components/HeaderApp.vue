@@ -64,7 +64,7 @@ data() {
             </button>
        </div>       
     </section>
-    <img src="../assets/svg/svg-1.svg" alt="wave">
+    <img src="../assets/svg/svg-1.svg" alt="wave" class="wave">
 </template>
 
 <style scoped lang="scss">
@@ -160,9 +160,12 @@ nav {
             color: $vivid-text-color-3;
         }
    
-    }
+    }   
+}
 
-    
+.wave {
+    object-position: top;
+    width: 100%;
 }
 
 
