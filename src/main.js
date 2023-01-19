@@ -8,11 +8,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faCalendarDays, faMagnifyingGlass, faPlus, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarDays, faMagnifyingGlass, faPaperPlane, faPlus, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import { faEye, faMoneyBill1, } from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faUserPlus, faCalendarDays, faPlus, faUser, faMoneyBill1, faEye)
+library.add(faMagnifyingGlass, faUserPlus, faCalendarDays, faPlus, faUser, faMoneyBill1, faEye, faPaperPlane)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
