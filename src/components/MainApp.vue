@@ -94,25 +94,86 @@ export default {
 
     </section>
 
-    <section class="university py-4">
-        <!--University year timeline + upcomigs events cards + btn-->
-        <h2>University Year</h2>
-        <div>
-            <h5>
-                Demo classes
-            </h5>
-            <h5>
-                Graduation Day
-            </h5>
-            <img src="" alt="">
-            <h5>
-                Oreintation
-            </h5>
-            <h5>
-                Evalutation
-            </h5>
+    <section class="university py-4 d-flex flex-column align-items-center">
+        <!--University year timeline -->
+        <img src="../assets/img/Clock-and-Bell.png" alt="bell" class="small-ico py-3">
+        <h2 class="text-center">University Year</h2>
+        <div class="top-line py-5 text-center d-flex justify-content-center">
+            <div class="w-25">
+                <h5 class="fw-vold">
+                    Demo classes
+                </h5>
+                <p>
+                    In the first week, students try to accomodate with the teaching style and choose their optional courses.
+                </p>
+            </div>
+           
+            <div class="w-25">
+                <h5 class="fw-bold">
+                    Grauation Day
+                </h5>
+                <p>
+                    On the day of grduation, all students gather for the ceremony and then network and party among others.
+                </p>
+            </div>
+            
         </div>
 
+        <img src="../assets/img/Timeline-Item.png" alt="timeline" id="timeline">
+
+        <div class="bottom-line py-5 text-center d-flex justify-content-center">
+            <div class="w-25">
+                <h5 class="fw-vold">
+                    Orientation
+                </h5>
+                <p>
+                    First dat of university year, all students gather for the opening ceremony and then network with others.
+                </p>
+            </div>
+           
+            <div class="w-25">
+                <h5 class="fw-bold">
+                    Evalutation
+                </h5>
+                <p>
+                    At the end of a semester students take a general evalutation test for every  subject they're learning.
+                </p>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <section class="up-events d-flex flex-column align-items-center">
+        <!--upcomigs events cards + btn-->
+        <img src="../assets/img/upcoming-events-calendar-icon.png" alt="event calendar" class="small-ico py-3">
+        <h2 class="text-center">Upcoming Events</h2>    
+
+        <div class="my-card-wrapper d-flex justify-content-between">
+
+            <div class="my-card">
+                <h3 class="fw-bold py-1">Coaching Sessions</h3>
+                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">20 may 21:30 PM</span>
+                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]</p>
+                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>
+            </div>
+            <div class="my-card">
+                <h3 class="fw-bold py-1">Coaching Sessions</h3>
+                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">20 may 21:30 PM</span>
+                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]</p>
+                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>
+            </div>
+            <div class="my-card">
+                <h3 class="fw-bold py-1">Coaching Sessions</h3>
+                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">20 may 21:30 PM</span>
+                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]</p>
+                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>
+            </div>
+
+        </div>
+
+        <button type="button" class="btn">View All Events</button>
     </section>
 
     <section>
@@ -136,6 +197,10 @@ h2 {
     font-weight: bolder;
     font-size: 3.6rem;
 }
+
+.small-ico {
+        width: 70px;
+    }
 
 .bubble-container {
     padding-left: 2rem;
@@ -193,6 +258,10 @@ h2 {
         border-radius: 50px;
         padding: 1.3rem 3rem;
         font-weight: bolder;
+
+        &:hover {
+            background-color: $vivid-bg-color-2;
+        }
     }
 
 }
@@ -265,8 +334,82 @@ h2 {
 }
 
 .university {
-    background-color: $vivid-bg-color-2;
+    background-color: $vivid-bg-color-3;
     color: $main-light-text-color;
+
+    h2 {
+        background-color: #db2a2c;
+        width: 25%;
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-weight: bolder;
+        padding-top: 3rem;
+    }
+
+    p {
+        padding: 1rem 0;
+        font-size: .9rem;
+    }
+
+
 }
+
+.up-events {
+    background-color: $vivid-bg-color-3;
+    color: $main-light-text-color;
+    padding-bottom: 5rem;
+
+    h2 {
+        padding-bottom: 5rem;
+    }
+
+    .my-card-wrapper {
+        width: 70%;
+        padding-bottom: 4rem;
+    }
+        .my-card {
+            width: calc(100% / 3 - 2rem);
+            background-color: $main-bg-color;
+            color: $main-dark-text-color;
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+
+            span,
+            p,
+            .fa-calendar-days {
+                color: $grey-text-color-1;
+            }
+            
+            span {
+                font-size: .8rem;
+            }
+
+            button {
+            background-color: $vivid-bg-color-2;
+            color: $main-light-text-color;
+            border-radius: 50px;
+            padding: .5rem 1rem;
+            font-weight: bolder;
+        }
+
+
+    }
+
+    button {
+        background-color: $vivid-bg-color-1;
+        color: $main-light-text-color;
+        border-radius: 50px;
+        padding: 1.3rem 3rem;
+        font-weight: bolder;
+
+        &:hover {
+            background-color: $vivid-bg-color-2;
+        }
+    }
+}
+
 </style>
 

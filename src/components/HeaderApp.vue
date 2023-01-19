@@ -153,11 +153,17 @@ nav {
         .b-left {
             background-color: $vivid-bg-color-1; 
             margin-right: 3rem;
+
+            &:hover {
+            background-color: $main-bg-color;
+            color:$vivid-text-color-3;
+    }
         }
 
         .b-right {
             background-color: $main-bg-color; 
             color: $vivid-text-color-3;
+
         }
    
     }   
