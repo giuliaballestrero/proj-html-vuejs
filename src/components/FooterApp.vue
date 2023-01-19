@@ -63,7 +63,7 @@ data() {
             </div>
         </div>
 
-        <div class="f-center d-flex">
+        <div class="f-center d-flex justify-content-center">
 
             <div class="pe-5">
                 <h5 class="fw-bold">Get EduPrime</h5>
@@ -94,23 +94,27 @@ data() {
             </div>
             
             <div>
-                <p class="fw-bold py-4">Search Categories</p>
+                <p class="fw-bold pt-4">Search Categories</p>
 
-                <div class="py-4">
+                <div class="py-4 d-flex flex-wrap justify-content-end">
                     <a href="#" v-for="category in catItems"> 
                         <span>{{ category }}</span>
                     </a>
                 </div>
 
-                <p class="py-5">ModelTheme. All rights reserved.</p>
+                <p class="py-2">ModelTheme. All rights reserved.</p>
 
             </div>
 
         </div>
+        </section>
 
-    </section>
+        <div class="d-flex justify-content-end px-5">
+            <a href="#" id="top-page">
+                <img src="../assets/img/back-to-top-arrow.svg" alt="top arrow">
+            </a>
+        </div>
     </footer>
-    
 </template>
 
 <style scoped lang="scss">
@@ -130,7 +134,7 @@ footer {
     background-color: $vivid-bg-color-3;
     color: $main-light-text-color;
     padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .f-left,
@@ -181,9 +185,9 @@ width: calc( 100% / 3 - 1rem);
 
         a {
             border: 1px solid $border-color-1;
-            border-radius: 30px;
-            padding: .3rem;
-            margin-right: 1rem;
+            border-radius: 20px;
+            padding: .2rem .7rem;
+            margin: .3rem .6rem;
 
             span {
                 text-transform: uppercase;
@@ -192,11 +196,16 @@ width: calc( 100% / 3 - 1rem);
             }
         }
 
-        p{
+        p:last-child{
             color: $vivid-text-color-1;
         }
     }
 }
 
-
+a#top-page {
+    background-color: $vivid-bg-color-1;
+    color: $main-light-text-color ;
+    border-radius: 50%;
+    padding: .7rem 1rem;
+    }
 </style>
