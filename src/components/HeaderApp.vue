@@ -62,9 +62,10 @@ data() {
                 <font-awesome-icon icon="fa-solid fa-user-plus" />
                <span>Apply for university</span> 
             </button>
-       </div>       
+       </div> 
+       <img src="../assets/img/Wave-1.png" alt="wave" class="wave">      
     </section>
-    <img src="../assets/svg/svg-1.svg" alt="wave" class="wave">
+    
 </template>
 
 <style scoped lang="scss">
@@ -123,11 +124,15 @@ nav {
     background-color: $vivid-bg-color-3;
     // background-image: url(../assets/img/theme_slider2_bg-1.jpg);
     color: $main-light-text-color;
-    padding-bottom: 5rem;
+    
+    img {
+        object-position: bottom;
+    }
 
     .text-wrapper {
         width:45%;
         margin: auto;
+        padding-bottom: 7rem;
 
         h1 {
             font-size: 4rem;

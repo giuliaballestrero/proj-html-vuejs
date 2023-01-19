@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <section class="container-fluid">
+    <section id="introduction" class="container-fluid">
         <div class="bubble-container">
             <p class="speech-bubble">Purchase Eduprime on Envato Market</p>
         </div>
@@ -43,7 +43,7 @@ export default {
         </div>
     </section>
 
-    <section class="faculties py-5">
+    <section class="faculties pt-5">
         <!--Faculties availables + logos-->
         <h2 class="text-center">
             Faculties available at EduPrime
@@ -91,6 +91,8 @@ export default {
 
             </div>
         </div>
+
+        <img src="../assets/svg/svg-0.svg" alt="">
 
     </section>
 
@@ -174,13 +176,15 @@ export default {
         </div>
 
         <button type="button" class="btn">View All Events</button>
+
     </section>
 
     <section> <!--last courses-->
         <!--Latest Courses cards + 2 layout = inverted (Ex method + Variable Fee)-->
+        <img src="../assets/svg/svg-1.svg" alt="">
         <div class="latest-courses">
             <div class="text-container">
-                <h2 class="py-4">Latest Courses</h2>
+                <h2 class="pb-4">Latest Courses</h2>
             </div>
 
             <div class="my-card-wrapper d-flex justify-content-between mb-5">
@@ -343,9 +347,14 @@ h2 {
         width: 70px;
     }
 
+#introduction {
+    background-image: url(../assets/img/home-background.png);
+    background-repeat: no-repeat;
+
+}
 .bubble-container {
     padding-left: 2rem;
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
 }
 
 .speech-bubble {
@@ -353,7 +362,7 @@ h2 {
     color: $main-light-text-color;
     background: $dark-bg-color-1;
     border-radius: .4em;
-    width: 230px;
+    width: 200px;
     padding: .5rem;
     font-size: .8rem;
     text-align: center;
@@ -500,7 +509,7 @@ h2 {
 .up-events {
     background-color: $vivid-bg-color-3;
     color: $main-light-text-color;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 
     h2 {
         padding-bottom: 5rem;
@@ -553,7 +562,7 @@ h2 {
 }
 
 .latest-courses {
-    padding-top: 5rem;
+    padding-top: 1rem;
 
     .text-container {
         width: 70%;
@@ -666,7 +675,8 @@ padding-bottom: 6rem;
             font-weight: bolder;
 
             &:hover {
-            
+                background-color: $vivid-bg-color-1;
+                color: $main-light-text-color;
             }
         }
 
@@ -707,17 +717,17 @@ padding-bottom: 6rem;
 .partners {
     padding-bottom: 10rem;
     background-image: url();
-}
 
-.partners-logos img {
-   width: 100px;
-   margin: 0 1rem;
-   opacity: 20%;
+    .partners-logos img {
+        width: 100px;
+        margin: 0 1rem;
+        opacity: 20%;
 
-   &:hover {
-    opacity: 100%;
-   }
+    &:hover {
+        opacity: 100%;
+    }
 
+    }
 }
 
 
