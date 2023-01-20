@@ -107,7 +107,7 @@ h2 {
         font-weight: bolder;
 
         &:hover {
-            background-color: $vivid-bg-color-2;
+            background-color: $vivid-bg-color-3;
         }
     }
 }

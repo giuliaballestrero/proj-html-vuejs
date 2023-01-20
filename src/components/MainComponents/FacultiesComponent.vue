@@ -122,6 +122,7 @@ h2 {
             width: 35%;
             align-self: center;
             padding: 2rem 0;;
+            filter: invert(50);
         }
 
         // aggiungere hover sulla card //
@@ -142,7 +143,7 @@ h2 {
         }
 
         button {
-            background-color: $vivid-bg-color-2;
+            background-color: $vivid-bg-color-3;
             color: $main-light-text-color;
             border-radius: 50px;
             padding: 1.3rem 3rem;

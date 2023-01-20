@@ -184,10 +184,11 @@ h2 {
 
             img {
                 width: 25%;
+                filter: invert(50);
             }
 
             button {
-            background-color: $vivid-bg-color-2;
+            background-color: $vivid-bg-color-3;
             color: $main-light-text-color;
             border-radius: 50px;
             padding: .5rem 1rem;
@@ -228,7 +229,7 @@ h2 {
     }
 
     button {
-        background-color: $vivid-bg-color-2;
+        background-color: $vivid-bg-color-3;
         color: $main-light-text-color;
         border-radius: 50px;
         padding: 1.3rem 3rem;
@@ -266,7 +267,7 @@ padding-bottom: 6rem;
         }
 
         button {
-            background-color: $vivid-bg-color-2;
+            background-color: $vivid-bg-color-3;
             color: $main-light-text-color;
             border-radius: 50px;
             padding: 1.3rem 3rem;
