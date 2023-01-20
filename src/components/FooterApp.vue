@@ -108,10 +108,7 @@ data() {
 
         </div>
         </section>
-
-        <div class="d-flex justify-content-between align-items-center px-5">
-
-            <div class="theme-btns">
+            <div class="theme-btns px-5">
                 <div>
                     <a href="#">
                        <img src="../assets/svg/svg-3.svg" alt="leaf icon">
@@ -128,11 +125,11 @@ data() {
                 </div> 
                    
             </div>
-            
-            <a href="#" id="top-page">
-                <img src="../assets/img/back-to-top-arrow.svg" alt="top arrow">
-            </a>
-        </div>
+            <div class="d-flex justify-content-end px-5">
+                <a href="#" id="top-page">
+                    <img src="../assets/img/back-to-top-arrow.svg" alt="top arrow">
+                </a>
+            </div>
     </footer>
 </template>
 
@@ -226,12 +223,35 @@ a#top-page {
     color: $main-light-text-color ;
     border-radius: 50%;
     padding: .7rem 1rem;
-    }
+    transition: transform .2s;
 
+    &:hover  {
+        transform: scale(1.2);
+    }
+}
 
 .theme-btns {
+    position: fixed;
+    bottom: 0;
+
+    div:first-child {
+        transition: transform .3s;
+
+        &:hover {
+        transform: scale(1.2);
+    }
+    }
+
+    div:last-child {
+        transition: transform .3s;
+        
+        &:hover {
+        transform: scale(1.2);
+    }
+    }
 
 }
+
 .theme-btns div {
     background-color:#000000cc;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

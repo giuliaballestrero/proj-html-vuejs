@@ -118,6 +118,11 @@ nav {
     position: absolute;
     bottom: 450px;
     position: fixed;
+    transition: transform .3s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 
     a:hover {
         color:$vivid-text-color-3;
