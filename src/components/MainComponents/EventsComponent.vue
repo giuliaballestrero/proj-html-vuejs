@@ -1,6 +1,36 @@
 <script>
 export default {
-    
+    data() {
+      return {
+        eventsList: [
+        {
+            title: 'Coaching Sessions',
+            date: '20 may 21:30 PM',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]',
+            btn:'Find More',
+          },
+          {
+            title: 'Coaching Sessions',
+            date: '24 mar 18:00 PM',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]',
+            btn:'Find More',
+          },          
+          {
+            title: 'Coaching Sessions',
+            date: '12 feb 13:30 PM',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]',
+            btn:'Find More',
+          },
+
+        ]
+      }
+    },
+
+    /*methods: {
+        getImagePath: function(imgPath) {
+            return new URL(`../../assets/img/${imgPath}`, import.meta.url).href;
+        }
+    },*/
 }
 </script>
 
@@ -12,25 +42,12 @@ export default {
 
         <div class="my-card-wrapper d-flex justify-content-between">
 
-            <div class="my-card">
-                <h3 class="fw-bold py-1">Coaching Sessions</h3>
-                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">20 may 21:30 PM</span>
-                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]</p>
-                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>
+            <div class="my-card" v-for="event in eventsList">
+                <h3 class="fw-bold py-1">{{ event.title }}</h3>
+                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">{{event.date}}</span>
+                <p class="py-3">{{ event.text }}</p>
+                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />{{ event.btn }}</button>
             </div>
-            <div class="my-card">
-                <h3 class="fw-bold py-1">Coaching Sessions</h3>
-                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">20 may 21:30 PM</span>
-                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]</p>
-                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>
-            </div>
-            <div class="my-card">
-                <h3 class="fw-bold py-1">Coaching Sessions</h3>
-                <font-awesome-icon icon="fa-solid fa-calendar-days" /><span class="px-2">20 may 21:30 PM</span>
-                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing fugit nisi reprehenderit[...]</p>
-                <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>
-            </div>
-
         </div>
 
         <button type="button" class="btn">View All Events</button>
