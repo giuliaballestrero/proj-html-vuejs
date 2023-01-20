@@ -57,6 +57,11 @@ h2 {
             padding: 1rem 1.2rem;
             position: absolute;
             right: 430px;
+            transition: transform .2s;
+
+            &:hover  {
+                transform: scale(1.2);
+            }
         }
     }
 }

@@ -81,56 +81,7 @@ export default {
                         <span class="ps-3">{{ card.btntext }}</span>
                     </button>          
                 </div>
-                <!--<div class="my-card">
-                    <img src="../../assets/img/Speaker-icon.png" alt="speaker">
-                    <h5 class="fw-bold py-3">How to be a Speaker</h5>
-                    <p class="py-1">
-                        <font-awesome-icon icon="fa-solid fa-user" />
-                        <span class="px-2">Teacher:</span>
-                        <span class="fw-bold">James Collins</span>
-                    </p>
-                    
-                    <p class="pb-4">
-                        <font-awesome-icon icon="fa-regular fa-money-bill-1" />
-                        <span class="px-2">Price:</span>
-                        <span class="fw-bold">$21.00</span>  
-                    </p>
-                    <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>          
-                </div>
-                <div class="my-card">
-                    <img src="../../assets/img/Network-icon.png" alt="network">
-                    <h5 class="fw-bold py-3">Network Introductions</h5>
-                    <p class="py-1">
-                        <font-awesome-icon icon="fa-solid fa-user" />
-                        <span class="px-2">Teacher:</span>
-                        <span class="fw-bold">James Collins</span>
-                    </p>
-                    
-                    <p class="pb-4">
-                        <font-awesome-icon icon="fa-regular fa-money-bill-1" />
-                        <span class="px-2">Price:</span>
-                        <span class="fw-bold">$21.00</span>  
-                    </p>   
-                    <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>          
-                </div>
-                <div class="my-card">
-                    <img src="../../assets/img/Brand-icon.png" alt="brand">
-                    <h5 class="fw-bold py-3">Brand Management</h5>
-                    <p class="py-1">
-                        <font-awesome-icon icon="fa-solid fa-user" />
-                        <span class="px-2">Teacher:</span>
-                        <span class="fw-bold">James Collins</span>
-                    </p>
-                    
-                    <p class="pb-4">
-                        <font-awesome-icon icon="fa-regular fa-money-bill-1" />
-                        <span class="px-2">Price:</span>
-                        <span class="fw-bold">$21.00</span>  
-                    </p>
-                       
-                    <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>          
-                </div>-->
-
+               
             </div>
 
             <div class="exam-wrapper d-flex justify-content-center">
@@ -245,7 +196,14 @@ h2 {
             font-weight: bolder;
             position: absolute;
             left: 94px;
+
+            &:hover {
+                background-color: $vivid-bg-color-1;
             }
+            
+            }
+
+
 
         }
     }
@@ -285,9 +243,10 @@ h2 {
         padding: 1.3rem 3rem;
         font-weight: bolder;
 
-        &:hover {
-        
-        }
+            &:hover {
+                background-color: $vivid-bg-color-1;
+            }
+
     }
 
     }

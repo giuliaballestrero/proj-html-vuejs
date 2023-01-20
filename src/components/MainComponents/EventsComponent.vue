@@ -113,6 +113,10 @@ h2 {
                 position: absolute;
                 left: 140px;
 
+                &:hover {
+                    background-color: $vivid-bg-color-1;
+                }
+
             }
     }
 
@@ -125,6 +129,7 @@ h2 {
 
         &:hover {
             background-color: $vivid-bg-color-3;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
     }
 }

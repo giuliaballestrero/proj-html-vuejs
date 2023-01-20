@@ -58,6 +58,10 @@ export default {
                 <img :src="getImagePath(partner.path)" :alt="partner.alt">
             </div>
         </div>
+
+        <div class="wave">
+
+        </div>
     </section>
 </template>
 
@@ -76,10 +80,8 @@ h2 {
         width: 70px;
     }
 
-
     .partners {
     padding-bottom: 10rem;
-    background-image: url();
 
         .partners-logos div {
 

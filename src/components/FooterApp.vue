@@ -197,6 +197,12 @@ width: calc( 100% / 3 - 1rem);
             padding: 1rem 1.2rem;
             position: absolute;
             right: 330px;
+            transition: transform .2s;
+
+
+            &:hover  {
+                transform: scale(1.2);
+    }
         }
 
         a {
