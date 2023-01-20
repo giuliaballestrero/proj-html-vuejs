@@ -92,7 +92,7 @@ export default {
             </div>
         </div>
 
-        <!--<img src="../assets/svg/svg-0.svg" alt="">-->
+        <img src="../assets/svg/svg-0.svg" alt="wave">
 
     </section>
 
@@ -179,9 +179,9 @@ export default {
 
     </section>
 
-    <section> <!--last courses-->
+    <section> <!--latest courses-->
         <!--Latest Courses cards + 2 layout = inverted (Ex method + Variable Fee)-->
-        <!--<img src="../assets/svg/svg-1.svg" alt="">-->
+        <img src="../assets/svg/svg-1.svg" alt="wave">
         <div class="latest-courses">
             <div class="text-container">
                 <h2 class="pb-4">Latest Courses</h2>

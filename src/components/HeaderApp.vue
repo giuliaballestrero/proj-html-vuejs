@@ -63,7 +63,14 @@ data() {
                <span>Apply for university</span> 
             </button>
        </div> 
-       <!--<img src="../assets/img/Wave-1.png" alt="wave" class="w-20">      -->
+       <aside class="sidebar">
+         <div class="d-flex flex-column">
+            <a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
+            <a href="#"><font-awesome-icon icon="fa-solid fa-book-open" /></a>
+            <a href="#"><font-awesome-icon icon="fa-solid fa-palette" /></a>
+         </div>
+       </aside>
+       <img src="../assets/img/Wave-1.png" alt="wave">
     </section>
     
 </template>
@@ -103,6 +110,27 @@ nav {
         }   
 }
 
+.sidebar {
+    background-color: $vivid-bg-color-1;
+    width: 40px;
+    height: 120px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 450px;
+
+    a:hover {
+        color:$vivid-text-color-3;
+    }
+
+    .fa-cart-shopping,
+    .fa-book-open,
+    .fa-palette {
+        height: 20px;
+        padding: .5rem 0;
+    }
+
+}
+
 .header-top {
     background-color: $vivid-bg-color-3;
 
@@ -118,6 +146,7 @@ nav {
         background-color: $main-bg-color;
         color:$vivid-text-color-3;
     }
+
 }
 
 .header-bottom {
@@ -126,7 +155,8 @@ nav {
     color: $main-light-text-color;
     
     img {
-        object-position: bottom;
+        width: 100%;
+        object-position: center;
     }
 
     .text-wrapper {
