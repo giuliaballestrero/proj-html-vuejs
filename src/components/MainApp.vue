@@ -99,8 +99,8 @@ export default {
     <section class="university py-4 d-flex flex-column align-items-center">
         <!--University year timeline -->
         <img src="../assets/img/Clock-and-Bell.png" alt="bell" class="small-ico py-3">
-        <h2 class="text-center">University Year</h2>
-        <div class="top-line py-5 text-center d-flex justify-content-center">
+        <h2 class="text-center mb-3">University Year</h2>
+        <div class="top-line pt-5 text-center d-flex">
             <div class="w-25">
                 <h5 class="fw-vold">
                     Demo classes
@@ -123,7 +123,7 @@ export default {
 
         <img src="../assets/img/Timeline-Item.png" alt="timeline" id="timeline">
 
-        <div class="bottom-line py-5 text-center d-flex justify-content-center">
+        <div class="bottom-line pb-5 text-center d-flex">
             <div class="w-25">
                 <h5 class="fw-vold">
                     Orientation
@@ -437,6 +437,10 @@ h2 {
         font-size: .9rem;
     }
 
+    img {
+
+    }
+
     .squares-container {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
@@ -444,9 +448,21 @@ h2 {
     .square {
         width: calc(100% / 7.5);
         height: 200px;
-        border: 1px solid $border-color-5;
+        border: 1px solid $border-color-3;
         display: flex;
         flex-direction: column;
+
+        &:hover {
+            background-color: $vivid-bg-color-3;
+        }
+
+        &:hover span{
+            color: $main-light-text-color;
+        }
+
+        &:hover img {
+            filter: brightness(500%);
+        }
 
         img {
             width: 35%;
@@ -495,13 +511,33 @@ h2 {
 
     h5 {
         font-weight: bolder;
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
 
     p {
         padding: 1rem 0;
         font-size: .9rem;
     }
+
+    .top-line div:first-child {
+        margin-left: 600px;
+        padding: 0 3rem;
+    }
+
+    .top-line div:last-child {
+        padding: 0 3rem;
+    }
+
+
+    .bottom-line div:first-child {
+        margin-left: 340px;
+        padding: 0 3rem;
+    }
+
+    .bottom-line div:last-child {
+        padding: 0 3rem;
+    }
+
 
 
 }
@@ -526,6 +562,7 @@ h2 {
             border-radius: 20px;
             padding: 1.5rem;
             text-align: center;
+            position: relative;
 
             span,
             p,
@@ -538,14 +575,16 @@ h2 {
             }
 
             button {
-            background-color: $vivid-bg-color-2;
-            color: $main-light-text-color;
-            border-radius: 50px;
-            padding: .5rem 1rem;
-            font-weight: bolder;
-        }
+                background-color: $vivid-bg-color-3;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                color: $main-light-text-color;
+                border-radius: 50px;
+                padding: .5rem 1rem;
+                font-weight: bolder;
+                position: absolute;
+                left: 140px;
 
-
+            }
     }
 
     button {
@@ -582,6 +621,7 @@ h2 {
             padding: 1rem;
             text-align: center;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            position: relative;
 
             p {
                 color: $grey-text-color-1;
@@ -601,6 +641,8 @@ h2 {
             border-radius: 50px;
             padding: .5rem 1rem;
             font-weight: bolder;
+            position: absolute;
+            left: 94px;
             }
 
         }

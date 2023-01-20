@@ -109,7 +109,26 @@ data() {
         </div>
         </section>
 
-        <div class="d-flex justify-content-end px-5">
+        <div class="d-flex justify-content-between align-items-center px-5">
+
+            <div class="theme-btns">
+                <div>
+                    <a href="#">
+                       <img src="../assets/svg/svg-3.svg" alt="leaf icon">
+                        <span>Purchase Theme</span> 
+                    </a>
+                    
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="../assets/svg/svg-2.svg" alt="theme icon">
+                        <span>Related Themes</span> 
+                    </a>
+                </div> 
+                   
+            </div>
+            
             <a href="#" id="top-page">
                 <img src="../assets/img/back-to-top-arrow.svg" alt="top arrow">
             </a>
@@ -207,5 +226,27 @@ a#top-page {
     color: $main-light-text-color ;
     border-radius: 50%;
     padding: .7rem 1rem;
+    }
+
+    .theme-btns div {
+        background-color:#000000cc;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        opacity: 90%;
+        width: 180px;
+        border-radius: 10px;
+        padding: .5rem;
+        margin-bottom: .5rem;
+
+        img {
+            width: 15%;
+            padding-left: .5rem;
+        }
+        
+        span {
+            padding-left: 1.5rem;
+            font-size: .7rem;
+            vertical-align: middle;
+        }
+
     }
 </style>
