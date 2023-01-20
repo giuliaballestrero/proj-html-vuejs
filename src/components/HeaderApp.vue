@@ -150,8 +150,8 @@ nav {
 }
 
 .header-bottom {
+    //background-image: url(../assets/img/theme_slider2_bg-1.jpg);
     background-color: $vivid-bg-color-3;
-    // background-image: url(../assets/img/theme_slider2_bg-1.jpg);
     color: $main-light-text-color;
     
     img {
