@@ -1,7 +1,55 @@
 <script>
 export default {
-    
+    data() {
+      return {
+        myCards: [
+          {
+            path: 'Decisions-icon.png',
+            alt: 'decision',
+            title: 'Make Better Decisions',
+            teacher: 'James Collins',
+            price: '$21.00',
+            icon: 'fa-regular fa-eye',
+            btntext: 'View Course'
+          },
+          {
+            path: 'Speaker-icon.png',
+            alt: 'speaker',
+            title: 'How to be a Speaker',
+            teacher: 'James Collins',
+            price: '$21.00',
+            icon: 'fa-solid fa-plus',
+            btntext: 'Find More',
+          },
+          {
+            path: 'Network-icon.png',
+            alt: 'network',
+            title: 'Network Introductions',
+            teacher: 'James Collins',
+            price: '$21.00',
+            icon: 'fa-solid fa-plus',
+            btntext: 'Find More'
+          },
+          
+          {
+            path: 'Brand-icon.png',
+            alt: 'brand',
+            title: 'Brand Management',
+            teacher: 'James Collins',
+            price: '$21.00',
+            icon: 'fa-solid fa-plus',
+            btntext: 'Find More'
+          },    
+        ]
+      }
+    },
+    methods: {
+        getImagePath: function(imgPath) {
+            return new URL(`../../assets/img/${imgPath}`, import.meta.url).href;
+        }
+    },
 }
+
 </script>
 
 <template>
@@ -15,23 +63,25 @@ export default {
 
             <div class="my-card-wrapper d-flex justify-content-between mb-5">
 
-                <div class="my-card">
-                    <img src="../../assets/img/Decisions-icon.png" alt="decision">
-                    <h5 class="fw-bold py-1">Make Better Decisions</h5>
+                <div class="my-card" v-for="card in myCards">
+                    <img :src="getImagePath(card.path)" :alt="card.alt">
+                    <h5 class="fw-bold py-1">{{card.title}}</h5>
                     <p class="py-3">
                         <font-awesome-icon icon="fa-solid fa-user" />
                         <span class="px-2">Teacher:</span>
-                        <span class="fw-bold">James Collins</span>
+                        <span class="fw-bold">{{card.teacher}}</span>
                     </p>
                     
                     <p class="pb-4">
                         <font-awesome-icon icon="fa-regular fa-money-bill-1" />
                         <span class="px-2">Price:</span>
-                        <span class="fw-bold">$21.00</span>  
+                        <span class="fw-bold">{{ card.price }}</span>  
                     </p>  
-                    <button type="button" class="btn"><font-awesome-icon icon="fa-regular fa-eye" />View Course</button>          
+                    <button type="button" class="btn"><font-awesome-icon :icon="card.icon" />
+                        <span class="ps-3">{{ card.btntext }}</span>
+                    </button>          
                 </div>
-                <div class="my-card">
+                <!--<div class="my-card">
                     <img src="../../assets/img/Speaker-icon.png" alt="speaker">
                     <h5 class="fw-bold py-3">How to be a Speaker</h5>
                     <p class="py-1">
@@ -79,7 +129,7 @@ export default {
                     </p>
                        
                     <button type="button" class="btn"><font-awesome-icon icon="fa-solid fa-plus" />Find More</button>          
-                </div>
+                </div>-->
 
             </div>
 
