@@ -228,25 +228,31 @@ a#top-page {
     padding: .7rem 1rem;
     }
 
-    .theme-btns div {
-        background-color:#000000cc;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        opacity: 90%;
-        width: 180px;
-        border-radius: 10px;
-        padding: .5rem;
-        margin-bottom: .5rem;
 
-        img {
-            width: 15%;
-            padding-left: .5rem;
-        }
-        
-        span {
-            padding-left: 1.5rem;
-            font-size: .7rem;
-            vertical-align: middle;
-        }
+.theme-btns {
 
+}
+.theme-btns div {
+    background-color:#000000cc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 90%;
+    width: 180px;
+    border-radius: 10px;
+    padding: .5rem;
+    margin-bottom: .5rem;
+
+
+    img {
+        width: 15%;
+        padding-left: .5rem;
     }
+        
+    span {
+        padding-left: 1.5rem;
+        font-size: .7rem;
+        vertical-align: middle;
+    }
+
+}
 </style>
+

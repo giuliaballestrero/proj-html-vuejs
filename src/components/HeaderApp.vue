@@ -117,6 +117,7 @@ nav {
     border-radius: 5px;
     position: absolute;
     bottom: 450px;
+    position: fixed;
 
     a:hover {
         color:$vivid-text-color-3;

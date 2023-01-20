@@ -7,7 +7,7 @@ export default {
 <template>
     <section class="subscrition">
         <div class="subs-wrapper d-flex justify-content-center">
-            <h1>Subscribe Now tu Our Newsletter!</h1>
+            <h1>Subscribe Now to Our Newsletter!</h1>
             <input class="px-5" type="text" placeholder="Email address...">
             <button type="button" class="btn">
                 <font-awesome-icon icon="fa-solid fa-paper-plane" />
