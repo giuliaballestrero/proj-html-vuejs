@@ -20,7 +20,8 @@ data() {
 </script>
 
 <template>
-    <section class="header-top container-fluid d-flex justify-content-between align-items-center"> 
+    <header>
+            <section class="header-top container-fluid d-flex justify-content-between align-items-center"> 
         <!-- logo e navbar btns-->
         <div class="logo-container">
             <a href="#"><img src="../assets/img/theme_eduprime_logo.png" alt="logo EduPrime"></a>
@@ -72,6 +73,8 @@ data() {
        </aside>
        <img src="../assets/img/Wave-1.png" alt="wave">
     </section>
+    </header>
+
     
 </template>
 
@@ -79,7 +82,12 @@ data() {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/_variables.scss' as *;
 
-
+header {
+    background-image: linear-gradient(
+        rgba(32, 173, 150, .9), 
+        rgba(32, 173, 150, .9)
+    ),url(../assets/img/theme_slider2_bg-1.jpg);
+}
 .logo-container {
 
     img {
@@ -138,7 +146,7 @@ nav {
 }
 
 .header-top {
-    background-color: $vivid-bg-color-3;
+    //background-color: $vivid-bg-color-3;
 
     button {
         background-color: $vivid-bg-color-1;
@@ -156,8 +164,9 @@ nav {
 }
 
 .header-bottom {
-    //background-image: url(../assets/img/theme_slider2_bg-1.jpg);
-    background-color: $vivid-bg-color-3;
+
+
+    //background-color: $vivid-bg-color-3;
     color: $main-light-text-color;
     
     img {
