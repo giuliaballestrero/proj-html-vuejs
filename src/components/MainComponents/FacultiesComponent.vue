@@ -1,6 +1,48 @@
 <script>
 export default {
-    
+    data() {
+      return {
+        facuList: [
+          {
+            path: 'Gavel-v2.png',
+            alt: 'gavel',
+            title: 'Law facolty',
+       
+          },
+                    {
+            path: 'Coins-tabs-v2.png',
+            alt: 'coins',
+            title: 'Economy',
+       
+          },
+                    {
+            path: 'Medicine-tabs-v2.png',
+            alt: 'medicine',
+            title: 'Medicine',
+       
+          },
+                    {
+            path: 'Computer-tabs-v2.png',
+            alt: 'computer',
+            title: 'Computer Science',
+       
+          },
+                    {
+            path: 'Palette-tabs-v2.png',
+            alt: 'graphic',
+            title: 'Graphic Design',
+       
+          },
+
+]
+      }
+    },
+
+    methods: {
+        getImagePath: function(imgPath) {
+            return new URL(`../../assets/img/${imgPath}`, import.meta.url).href;
+        }
+    },
 }
 </script>
 
@@ -16,25 +58,9 @@ export default {
         </p>
 
         <div class="squares-container d-flex justify-content-center">
-            <div class="square">
-                <img src="../../assets/img/Gavel-v2.png" alt="gavel">
-                <span>Law facolty</span>
-            </div>
-            <div class="square">
-                <img src="../../assets/img/Coins-tabs-v2.png" alt="coins">
-                <span>Economy</span>
-            </div>
-            <div class="square">
-                <img src="../../assets/img/Medicine-tabs-v2.png" alt="medicine">
-                <span>Medicine</span>
-            </div>
-            <div class="square">
-                <img src="../../assets/img/Computer-tabs-v2.png" alt="computer">
-                <span>Computer Science</span>
-            </div>
-            <div class="square">
-                <img src="../../assets/img/Palette-tabs-v2.png" alt="graphic">
-                <span>Graphic Design</span>
+            <div class="square" v-for="faculty in facuList">
+                <img .src="getImagePath(faculty.path)" :alt="faculty.alt">
+                <span>{{ faculty.title }}</span>
             </div>
         </div>
 
