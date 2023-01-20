@@ -174,6 +174,10 @@ h2 {
             border-radius: 50px;
             padding: 1.3rem 3rem;
             font-weight: bolder;
+
+            &:hover {
+                background-color: $vivid-bg-color-1;
+            }
         }
     }
 

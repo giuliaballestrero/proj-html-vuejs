@@ -87,7 +87,7 @@ data() {
 
         <div class="f-right d-flex flex-column align-items-end">
             <div>
-                <input class="px-5" type="text" placeholder="Email address...">
+                <input class="px-5" type="text" placeholder="Search...">
                 <button type="button" class="btn">
                     <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
                 </button>

@@ -191,7 +191,8 @@ nav {
             font-weight: bolder;
         }
 
-        .b-left {
+        .b-left,
+        .b-right {
             background-color: $vivid-bg-color-1; 
             margin-right: 3rem;
 
@@ -199,12 +200,6 @@ nav {
             background-color: $main-bg-color;
             color:$vivid-text-color-3;
     }
-        }
-
-        .b-right {
-            background-color: $main-bg-color; 
-            color: $vivid-text-color-3;
-
         }
    
     }   
